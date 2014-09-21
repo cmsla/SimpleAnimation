@@ -1,4 +1,4 @@
-var game = new Phaser.Game(1920, 1080, Phaser.AUTO, '', {preload: preload, create: create});
+var game = new Phaser.Game(3840, 2160, Phaser.AUTO, '', {preload: preload, create: create});
 var parasol3
 var bg
 
@@ -10,7 +10,7 @@ function preload() {
 function create() {
 	bg= game.add.sprite(0,0, 'bg');
 
-	parasol3= game.add.sprite(100, 100, 'parasol3');
+	parasol3= game.add.sprite(3000, 1500, 'parasol3');
 	parasol3.animations.add('walk');
 	parasol3.inputEnabled = true;
 	parasol3.events.onInputDown.add(parsil5Click, this);
